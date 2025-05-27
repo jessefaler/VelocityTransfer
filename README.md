@@ -21,8 +21,4 @@
 
 ---
 
-Got it. Here’s the **section you actually asked for**:
-
----
-
 You can find this plugin on [PaperMC Hangar](https://hangar.papermc.io/protoxon/VelocityTransfer).
