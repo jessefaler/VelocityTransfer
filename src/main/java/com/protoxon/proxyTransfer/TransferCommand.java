@@ -104,6 +104,11 @@ public class TransferCommand {
                         return 1;
                     }
 
+                    if (!source.hasPermission("proxytransfer.others")) {
+                        source.sendMessage(Component.text("You don't have permission to transfer others. You must have the \"proxytransfer.others\" permission.", NamedTextColor.RED));
+                        return 0;
+                    }
+
                     switch (playerContext.toLowerCase()) {
                         case "all":
                             for (Player p : proxy.getAllPlayers()) {
@@ -123,12 +128,6 @@ public class TransferCommand {
                                 source.sendMessage(Component.text("Player " + playerContext + " not found.", NamedTextColor.RED));
                                 return 0;
                             }
-
-                            if (!source.hasPermission("proxytransfer.others")) {
-                                source.sendMessage(Component.text("You don't have permission to transfer others.", NamedTextColor.RED));
-                                return 0;
-                            }
-
                             Transfer.transferPlayer(target, host, port);
                             return 1;
                     }
