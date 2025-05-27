@@ -22,3 +22,6 @@
 ---
 
 You can find this plugin on [PaperMC Hangar](https://hangar.papermc.io/protoxon/VelocityTransfer).
+
+[![VelocityTransfer](https://api.mcbanners.com/banner/resource/hangar/VelocityTransfer/banner.png?background__template=DARK_GUNMETAL)](https://hangar.papermc.io/protoxon/VelocityTransfer)
+
